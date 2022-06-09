@@ -94,3 +94,26 @@ for (let i = 0; i <= n; i++) {
         console.log("Did not find value");
     }
 }
+
+// Exercise 5
+console.log("EXERCISE 5:\n==========\n");
+
+let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+n = Math.round(Math.random() * (1000 - 100) + 1);
+let start = Math.round(Math.random() * (10 - 1) + 1);
+
+console.log(start);
+console.log(n);
+console.log(fizzDivisor);
+console.log(buzzDivisor);
+
+for (let i = start; i <= n; i++) {
+    if (i % fizzDivisor == 0) {
+        console.log("FIZZ");
+    } else if (i % buzzDivisor == 0) {
+        console.log("BUZZ");
+    } else {
+        console.log(i);
+    }
+}
